@@ -1,0 +1,24 @@
+.tiles #grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
+    justify-content: center;
+}
+
+.tiles #grid .grid-item {
+    min-width: 100%;
+    min-height: 100%;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+}
+
+.tiles #grid .grid-item:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: block;
+}
